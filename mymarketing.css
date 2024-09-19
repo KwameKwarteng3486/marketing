@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-item{
+    margin: 0px 10px;
+}
+.button{
+    height: 40px;
+    width: 110px;
+    border-radius: 25px;
+    border: 1.5px solid rgb(255, 255, 255); 
+    background: transparent; 
+    color: rgb(0, 153, 255);
+}
+.button:hover{
+    background-color: rgb(0, 153, 255);
+    color: white;
+    transition: .5s ease-in;
+    border: none;
+}
+
+.aboutbtn{
+  position: relative;
+  height: 33px;
+  width: 110px;
+  border: 1.5px solid rgb(129, 77, 9);
+  background: transparent;
+  color: rgb(189, 151, 102);
+  border-radius: 3px;
+  z-index: 1;
+}
+spans{
+  position: absolute;
+  height: 31px;
+  width: 0;
+  background: rgb(161, 94, 7);
+  top: 0;
+  left: 0;
+  transition: 1s ease-in;
+  z-index: -1;
+}
+.aboutbtn:hover spans{
+  width: 100%;
+  transition: 0.5s ease-in;
+}
+.buy-container{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 552vh;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  z-index: 1;
+  transform: scale(0);
+  transition: .6s ease;
+}
+.buy-container.active{
+  width: 100%;
+  transform: scale(1);
+}
+.buy-container .card{
+  border: 1.5px solid rgb(0, 153, 255);
+}
+
